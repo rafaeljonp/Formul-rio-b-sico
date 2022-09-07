@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario Profissional</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Meu grupo do formulário</legend>
+            <div><input class="nome" type="text" name="nome" placeholder="Digite o seu nome"></div>
+            <div><input class="nome" type="text" name="nome" placeholder="Digite seu e-mail"></div>
+            <div>
+                <select class="lista" name="lista">
+                    <option disabled selected>Qual sua idade?</option> <!-- disabled selected / nao deixa o objeto ser escolhido -->
+                    <option>20</option>
+                    <option>25+</option>
+                    <option>40+</option>
+                </select>
+            </div> 
+            <h2>Qual a sua cidade?</h2> 
+            <div class="cidades">
+            <div>
+                <input type="radio" name="cidade" value=""> <span>São José dos Campos</span> <!-- Colocar o name para a seleção ser unica -->
+            </div>  
+            <div>
+                <input type="radio" name="cidade" value=""> <span>Jacarei</span> <!-- Colocar o name para a seleção ser unica -->
+            </div>  
+            <div>
+                <input type="radio" name="cidade" value=""> <span>Caçapava</span> <!-- Colocar o name para a seleção ser unica -->
+            </div>  
+            <div>
+                <input type="radio" name="cidade" value=""> <span>Taubate</span> <!-- Colocar o name para a seleção ser unica -->
+            </div>  
+            <div>
+                <input type="radio" name="cidade" value=""> <span>Lorena</span> <!-- Colocar o name para a seleção ser unica -->
+            </div>  
+        </div>   
+        
+        <h2>Qual a sua comida favorita?</h2> 
+        <div class="comidas">
+        <div>
+            <input type="checkbox" name="comida" value=""> <span>Comida caseira</span> <!-- Checkbox seleciona quantas opcoes quiser -->
+        </div>  
+        <div>
+            <input type="checkbox" name="comida" value=""> <span>Comida japonesa</span> <!-- Checkbox seleciona quantas opcoes quiser -->
+        </div>  
+        <div>
+            <input type="checkbox" name="comida" value=""> <span>Pizza</span> <!-- Checkbox seleciona quantas opcoes quiser -->
+        </div>  
+        <div>
+            <input type="checkbox" name="comida" value=""> <span>Hmburguer</span> <!-- Checkbox seleciona quantas opcoes quiser -->
+        </div>  
+        <div>
+            <input type="checkbox" name="comida" value=""> <span>Vegana</span> <!-- Checkbox seleciona quantas opcoes quiser -->
+        </div>  
+    </div> 
+        <div>
+            <textarea placeholder="Possui alguma observação?"></textarea>
+        </div>
+        <div>
+            <input class="botao" type="submit" name="acao" value="Enviar">
+        </div>
+        </fieldset>
+    </form>
+</body>
+</html>
